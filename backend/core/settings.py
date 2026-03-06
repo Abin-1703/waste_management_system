@@ -3,8 +3,7 @@ from pathlib import Path
 BASE_DIR=Path(__file__).resolve().parent.parent
 SECRET_KEY="dev"
 DEBUG=False
-ALLOWED_HOSTS=["https://waste-management-system-1-bz7w.onrender.com/"
-"localhost","127.0.0.1"]
+ALLOWED_HOSTS=["*"]
 
 INSTALLED_APPS=[
 'django.contrib.admin',
@@ -83,3 +82,7 @@ DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
 
 ALLOWED_HOSTS = ["localhost","127.0.0.1"]
 STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
+
+CSRF_TRUSTED_ORIGINS = [
+    "https://waste-management-system-6g12.onrender.com,"
+]
