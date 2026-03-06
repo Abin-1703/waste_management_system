@@ -1,7 +1,7 @@
 import axios from "axios"
 
 const api = axios.create({
-  baseURL: "https://waste-management-backend.onrender.com/api/"
+  baseURL: "https://waste-management-system-6g12.onrender.com"
 })
 
 api.interceptors.request.use((config) => {
