@@ -36,10 +36,13 @@ export default function Register(){
         password:form.password
       })
       setMessage("Account created successfully")
-    }catch(err){
-      setMessage(" " + JSON.stringify(err.response?.data))
-    }
-
+    }catch (error) {
+  if (error.response && error.response.data) {
+    setError(JSON.stringify(error.response.data));
+  } else {
+    setError("Registration failed");
+  }
+}
     setLoading(false)
   }
 
