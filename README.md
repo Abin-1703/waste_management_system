@@ -1,9 +1,10 @@
 Waste Management System
 
-A full-stack Waste Management System developed using Django, Django REST Framework, React (Vite), and MySQL.
+A full-stack Waste Management System developed using Django, Django REST Framework, React (Vite), and MySQL.  
 This platform helps manage waste collection, track requests, and monitor waste management activities efficiently.
 
 ---
+
 Features
 - User Registration & Login
 - Waste Pickup Request System
@@ -19,14 +20,12 @@ Features
 Tech Stack
 
 Backend
-
 - Python
 - Django
 - Django REST Framework
 - MySQL
 
 Frontend
-
 - React (Vite)
 - Tailwind CSS
 - Axios
@@ -36,7 +35,7 @@ Frontend
 
 ---
 
-📁Project Structure
+Project Structure
 
 WasteManagementSystem
 │
@@ -55,14 +54,14 @@ WasteManagementSystem
 
 Backend Setup
 
-cd backend
-python -m venv venv
-venv\Scripts\activate   # Windows
-pip install -r requirements.txt
-python manage.py migrate
-python manage.py runserver
+cd backend  
+python -m venv venv  
+venv\Scripts\activate  
+pip install -r requirements.txt  
+python manage.py migrate  
+python manage.py runserver  
 
-Backend will run on:
+Backend runs on:
 
 http://127.0.0.1:8000
 
@@ -70,11 +69,11 @@ http://127.0.0.1:8000
 
 Frontend Setup
 
-cd frontend
-npm install
-npm run dev
+cd frontend  
+npm install  
+npm run dev  
 
-Frontend will run on:
+Frontend runs on:
 
 http://localhost:5173
 
@@ -82,9 +81,10 @@ http://localhost:5173
 
 Database
 
-- MySQL Database
-- Configure database credentials in Django settings.py
+MySQL database. Configure credentials in `settings.py`.
+
+---
 
 Author
 
-Developed by Abin kuruvila
+Developed by Abin Kuruvila
